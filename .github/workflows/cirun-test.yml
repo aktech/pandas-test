@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   pytest:
-    runs-on: cirun-ovh-runner
+    runs-on: "cirun-ovh-runner--${{ github.run_id }}"
     defaults:
       run:
         shell: bash -el {0}
